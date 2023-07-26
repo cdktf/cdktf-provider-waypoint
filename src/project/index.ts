@@ -14,43 +14,43 @@ import * as cdktf from 'cdktf';
 export interface ProjectConfig extends cdktf.TerraformMetaArguments {
   /**
   * Application status poll interval in seconds
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/project#app_status_poll_seconds Project#app_status_poll_seconds}
   */
   readonly appStatusPollSeconds?: number;
   /**
   * Configuration of Git repository where waypoint.hcl file is stored
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/project#data_source_git Project#data_source_git}
   */
   readonly dataSourceGit: ProjectDataSourceGit;
   /**
   * Basic authentication details for Git consisting of `username` and `password`
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/project#git_auth_basic Project#git_auth_basic}
   */
   readonly gitAuthBasic?: ProjectGitAuthBasic;
   /**
   * SSH authentication details for Git
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/project#git_auth_ssh Project#git_auth_ssh}
   */
   readonly gitAuthSsh?: ProjectGitAuthSsh;
   /**
   * The name of the Waypoint project
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/project#project_name Project#project_name}
   */
   readonly projectName: string;
   /**
   * List of variables in Key/value pairs associated with the Waypoint Project
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/project#project_variables Project#project_variables}
   */
   readonly projectVariables?: ProjectProjectVariables[] | cdktf.IResolvable;
   /**
   * Enable remote runners for project
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/project#remote_runners_enabled Project#remote_runners_enabled}
   */
   readonly remoteRunnersEnabled?: boolean | cdktf.IResolvable;
@@ -58,37 +58,37 @@ export interface ProjectConfig extends cdktf.TerraformMetaArguments {
 export interface ProjectDataSourceGit {
   /**
   * Indicates signal to be sent to any applications when their config files change.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/project#file_change_signal Project#file_change_signal}
   */
   readonly fileChangeSignal?: string;
   /**
   * Path in git repository when waypoint.hcl file is stored in a sub-directory
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/project#git_path Project#git_path}
   */
   readonly gitPath?: string;
   /**
   * Interval at which Waypoint should poll git repository for changes
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/project#git_poll_interval_seconds Project#git_poll_interval_seconds}
   */
   readonly gitPollIntervalSeconds?: number;
   /**
   * Git repository ref containing waypoint.hcl file
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/project#git_ref Project#git_ref}
   */
   readonly gitRef?: string;
   /**
   * Url of git repository storing the waypoint.hcl file
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/project#git_url Project#git_url}
   */
   readonly gitUrl?: string;
   /**
   * Whether Waypoint ignores changes outside path storing waypoint.hcl file
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/project#ignore_changes_outside_path Project#ignore_changes_outside_path}
   */
   readonly ignoreChangesOutsidePath?: boolean | cdktf.IResolvable;
@@ -280,13 +280,13 @@ export class ProjectDataSourceGitOutputReference extends cdktf.ComplexObject {
 export interface ProjectGitAuthBasic {
   /**
   * Git password
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/project#password Project#password}
   */
   readonly password: string;
   /**
   * Git username
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/project#username Project#username}
   */
   readonly username: string;
@@ -380,19 +380,19 @@ export class ProjectGitAuthBasicOutputReference extends cdktf.ComplexObject {
 export interface ProjectGitAuthSsh {
   /**
   * Git user associated with private key
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/project#git_user Project#git_user}
   */
   readonly gitUser?: string;
   /**
   * Passphrase to use with private key
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/project#passphrase Project#passphrase}
   */
   readonly passphrase?: string;
   /**
   * Private key to authenticate to Git
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/project#ssh_private_key Project#ssh_private_key}
   */
   readonly sshPrivateKey: string;

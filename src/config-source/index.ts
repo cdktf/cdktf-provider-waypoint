@@ -14,37 +14,37 @@ import * as cdktf from 'cdktf';
 export interface ConfigSourceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Config Source Project
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/config_source#application ConfigSource#application}
   */
   readonly application?: string;
   /**
   * Configuration for the dynamic source type
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/config_source#config ConfigSource#config}
   */
   readonly config?: { [key: string]: string };
   /**
   * Config Source Project
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/config_source#project ConfigSource#project}
   */
   readonly project?: string;
   /**
   * Config Source Scope
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/config_source#scope ConfigSource#scope}
   */
   readonly scope: string;
   /**
   * Config Source type
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/config_source#type ConfigSource#type}
   */
   readonly type: string;
   /**
   * Config Source Workspace
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/config_source#workspace ConfigSource#workspace}
   */
   readonly workspace?: string;

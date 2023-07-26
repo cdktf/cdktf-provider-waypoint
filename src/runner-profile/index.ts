@@ -14,55 +14,55 @@ import * as cdktf from 'cdktf';
 export interface RunnerProfileConfig extends cdktf.TerraformMetaArguments {
   /**
   * Indicates if this runner profile is the default for any new projects. The default is false
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/runner_profile#default RunnerProfile#default}
   */
   readonly default?: boolean | cdktf.IResolvable;
   /**
   * Any environment variables that should be exposed to the on demand runner.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/runner_profile#environment_variables RunnerProfile#environment_variables}
   */
   readonly environmentVariables?: { [key: string]: string };
   /**
   * The name of the runner profile
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/runner_profile#name RunnerProfile#name}
   */
   readonly name: string;
   /**
   * oci_url is the OCI image that will be used to boot the on demand runner.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/runner_profile#oci_url RunnerProfile#oci_url}
   */
   readonly ociUrl?: string;
   /**
   * Plugin config is the configuration for the plugin that is created. It is usually HCL and is decoded like the other plugins, and is plugin specific.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/runner_profile#plugin_config RunnerProfile#plugin_config}
   */
   readonly pluginConfig?: string;
   /**
   * Config format specifies the format of plugin_config. Valid values are HCL or JSON. The default is HCL
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/runner_profile#plugin_config_format RunnerProfile#plugin_config_format}
   */
   readonly pluginConfigFormat?: string;
   /**
   * Plugin type for runner i.e docker / kubernetes / aws-ecs.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/runner_profile#plugin_type RunnerProfile#plugin_type}
   */
   readonly pluginType: string;
   /**
   * The ID of the target runner for this profile.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/runner_profile#target_runner_id RunnerProfile#target_runner_id}
   */
   readonly targetRunnerId?: string;
   /**
   * A map of labels on target runners
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/runner_profile#target_runner_labels RunnerProfile#target_runner_labels}
   */
   readonly targetRunnerLabels?: { [key: string]: string };

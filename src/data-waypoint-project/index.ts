@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface DataWaypointProjectConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the Waypoint project
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/data-sources/project#project_name DataWaypointProject#project_name}
   */
   readonly projectName: string;
@@ -90,13 +90,13 @@ export class DataWaypointProjectDataSourceGitOutputReference extends cdktf.Compl
 export interface DataWaypointProjectGitAuthBasic {
   /**
   * Git password
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/data-sources/project#password DataWaypointProject#password}
   */
   readonly password: string;
   /**
   * Git username
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/data-sources/project#username DataWaypointProject#username}
   */
   readonly username: string;
@@ -180,7 +180,7 @@ export class DataWaypointProjectGitAuthBasicOutputReference extends cdktf.Comple
 export interface DataWaypointProjectGitAuthSsh {
   /**
   * Private key to authenticate to Git
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/data-sources/project#ssh_private_key DataWaypointProject#ssh_private_key}
   */
   readonly sshPrivateKey: string;
