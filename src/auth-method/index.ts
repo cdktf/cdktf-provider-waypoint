@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/auth_method
 // generated from terraform resource schema
 
@@ -18,79 +13,79 @@ export interface AuthMethodConfig extends cdktf.TerraformMetaArguments {
   readonly accessorSelector?: string;
   /**
   * Allowed URI for auth redirection.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/auth_method#allowed_redirect_uris AuthMethod#allowed_redirect_uris}
   */
   readonly allowedRedirectUris?: string[];
   /**
   * The optional audience claims required
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/auth_method#auds AuthMethod#auds}
   */
   readonly auds?: string[];
   /**
   * Mapping of a claim to a variable value for the access selector
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/auth_method#claim_mappings AuthMethod#claim_mappings}
   */
   readonly claimMappings?: { [key: string]: string };
   /**
   * Client ID of OIDC provider
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/auth_method#client_id AuthMethod#client_id}
   */
   readonly clientId: string;
   /**
   * Client Secret of OIDC provider
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/auth_method#client_secret AuthMethod#client_secret}
   */
   readonly clientSecret: string;
   /**
   * Description of auth method
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/auth_method#description AuthMethod#description}
   */
   readonly description?: string;
   /**
   * Optional CA certificate chain to validate the discovery URL. Multiple CA certificates can be specified to support easier rotation
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/auth_method#discovery_ca_pem AuthMethod#discovery_ca_pem}
   */
   readonly discoveryCaPem?: string[];
   /**
   * Discovery URL for OIDC provider
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/auth_method#discovery_url AuthMethod#discovery_url}
   */
   readonly discoveryUrl: string;
   /**
   * The display name of the Auth Method
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/auth_method#display_name AuthMethod#display_name}
   */
   readonly displayName?: string;
   /**
   * Same as claim_mappings but for list values
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/auth_method#list_claim_mappings AuthMethod#list_claim_mappings}
   */
   readonly listClaimMappings?: { [key: string]: string };
   /**
   * The name of the Auth Method
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/auth_method#name AuthMethod#name}
   */
   readonly name: string;
   /**
   * The optional claims scope requested.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/auth_method#scopes AuthMethod#scopes}
   */
   readonly scopes?: string[];
   /**
   * The signing algorithms supported by the OIDC connect server. If this isn't specified, this will default to RS256 since that should be supported according to the RFC. The string values here should be valid OIDC signing algorithms
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/auth_method#signing_algs AuthMethod#signing_algs}
   */
   readonly signingAlgs?: string[];

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs
 // generated from terraform resource schema
 
@@ -22,7 +17,7 @@ export interface WaypointProviderConfig {
   readonly token?: string;
   /**
   * Alias name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs#alias WaypointProvider#alias}
   */
   readonly alias?: string;
