@@ -155,6 +155,7 @@ private void ResetToken()
 | <code><a href="#@cdktf/provider-waypoint.provider.WaypointProvider.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-waypoint.provider.WaypointProvider.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-waypoint.provider.WaypointProvider.isTerraformProvider">IsTerraformProvider</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-waypoint.provider.WaypointProvider.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a WaypointProvider resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -215,6 +216,50 @@ WaypointProvider.IsTerraformProvider(object X);
 ###### `X`<sup>Required</sup> <a name="X" id="@cdktf/provider-waypoint.provider.WaypointProvider.isTerraformProvider.parameter.x"></a>
 
 - *Type:* object
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-waypoint.provider.WaypointProvider.generateConfigForImport"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Waypoint;
+
+WaypointProvider.GenerateConfigForImport(Construct Scope, string ImportToId, string ImportFromId, TerraformProvider Provider = null);
+```
+
+Generates CDKTF code for importing a WaypointProvider resource upon running "cdktf plan <stack-name>".
+
+###### `Scope`<sup>Required</sup> <a name="Scope" id="@cdktf/provider-waypoint.provider.WaypointProvider.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* Constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `ImportToId`<sup>Required</sup> <a name="ImportToId" id="@cdktf/provider-waypoint.provider.WaypointProvider.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* string
+
+The construct id used in the generated config for the WaypointProvider to import.
+
+---
+
+###### `ImportFromId`<sup>Required</sup> <a name="ImportFromId" id="@cdktf/provider-waypoint.provider.WaypointProvider.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* string
+
+The id of the existing WaypointProvider that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-waypoint.provider.WaypointProvider.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* HashiCorp.Cdktf.TerraformProvider
+
+? Optional instance of the provider where the WaypointProvider to import is found.
 
 ---
 

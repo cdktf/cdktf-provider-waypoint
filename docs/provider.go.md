@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/waypoint/0
 #### Initializers <a name="Initializers" id="@cdktf/provider-waypoint.provider.WaypointProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/provider"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/provider"
 
 provider.NewWaypointProvider(scope Construct, id *string, config WaypointProviderConfig) WaypointProvider
 ```
@@ -155,13 +155,14 @@ func ResetToken()
 | <code><a href="#@cdktf/provider-waypoint.provider.WaypointProvider.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-waypoint.provider.WaypointProvider.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-waypoint.provider.WaypointProvider.isTerraformProvider">IsTerraformProvider</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-waypoint.provider.WaypointProvider.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a WaypointProvider resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-waypoint.provider.WaypointProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/provider"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/provider"
 
 provider.WaypointProvider_IsConstruct(x interface{}) *bool
 ```
@@ -193,7 +194,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-waypoint.provider.WaypointProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/provider"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/provider"
 
 provider.WaypointProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -207,7 +208,7 @@ provider.WaypointProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-waypoint.provider.WaypointProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/provider"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/provider"
 
 provider.WaypointProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -215,6 +216,50 @@ provider.WaypointProvider_IsTerraformProvider(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-waypoint.provider.WaypointProvider.isTerraformProvider.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-waypoint.provider.WaypointProvider.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/provider"
+
+provider.WaypointProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a WaypointProvider resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-waypoint.provider.WaypointProvider.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-waypoint.provider.WaypointProvider.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the WaypointProvider to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-waypoint.provider.WaypointProvider.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing WaypointProvider that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-waypoint.provider.WaypointProvider.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the WaypointProvider to import is found.
 
 ---
 
@@ -406,7 +451,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-waypoint.provider.WaypointProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/provider"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/provider"
 
 &provider.WaypointProviderConfig {
 	Alias: *string,
