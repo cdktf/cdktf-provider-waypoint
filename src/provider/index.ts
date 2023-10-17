@@ -38,6 +38,20 @@ export class WaypointProvider extends cdktf.TerraformProvider {
   // =================
   public static readonly tfResourceType = "waypoint";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a WaypointProvider resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the WaypointProvider to import
+  * @param importFromId The id of the existing WaypointProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the WaypointProvider to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "waypoint", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========
