@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/waypoint/0
 #### Initializers <a name="Initializers" id="@cdktf/provider-waypoint.dataWaypointRunnerProfile.DataWaypointRunnerProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointrunnerprofile"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/datawaypointrunnerprofile"
 
 datawaypointrunnerprofile.NewDataWaypointRunnerProfile(scope Construct, id *string, config DataWaypointRunnerProfileConfig) DataWaypointRunnerProfile
 ```
@@ -270,7 +270,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-waypoint.dataWaypointRunnerProfile.DataWaypointRunnerProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointrunnerprofile"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/datawaypointrunnerprofile"
 
 datawaypointrunnerprofile.DataWaypointRunnerProfile_IsConstruct(x interface{}) *bool
 ```
@@ -302,7 +302,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-waypoint.dataWaypointRunnerProfile.DataWaypointRunnerProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointrunnerprofile"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/datawaypointrunnerprofile"
 
 datawaypointrunnerprofile.DataWaypointRunnerProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ datawaypointrunnerprofile.DataWaypointRunnerProfile_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-waypoint.dataWaypointRunnerProfile.DataWaypointRunnerProfile.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointrunnerprofile"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/datawaypointrunnerprofile"
 
 datawaypointrunnerprofile.DataWaypointRunnerProfile_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -614,7 +614,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-waypoint.dataWaypointRunnerProfile.DataWaypointRunnerProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointrunnerprofile"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/datawaypointrunnerprofile"
 
 &datawaypointrunnerprofile.DataWaypointRunnerProfileConfig {
 	Connection: interface{},
