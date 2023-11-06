@@ -1,7 +1,9 @@
 
-# Terraform CDK waypoint Provider ~> 0.1
+# Terraform CDK waypoint Provider tracks ~> 0.1
 
 This repo builds and publishes the Terraform waypoint Provider bindings for [CDK for Terraform](https://cdk.tf).
+
+Is based directly on waypoint 0.1.0
 
 ## Available Packages
 
