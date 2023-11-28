@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/waypoint/0
 #### Initializers <a name="Initializers" id="@cdktf/provider-waypoint.configSource.ConfigSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/configsource"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/configsource"
 
 configsource.NewConfigSource(scope Construct, id *string, config ConfigSourceConfig) ConfigSource
 ```
@@ -356,7 +356,7 @@ func ResetWorkspace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-waypoint.configSource.ConfigSource.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/configsource"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/configsource"
 
 configsource.ConfigSource_IsConstruct(x interface{}) *bool
 ```
@@ -388,7 +388,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-waypoint.configSource.ConfigSource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/configsource"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/configsource"
 
 configsource.ConfigSource_IsTerraformElement(x interface{}) *bool
 ```
@@ -402,7 +402,7 @@ configsource.ConfigSource_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-waypoint.configSource.ConfigSource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/configsource"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/configsource"
 
 configsource.ConfigSource_IsTerraformResource(x interface{}) *bool
 ```
@@ -416,7 +416,7 @@ configsource.ConfigSource_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-waypoint.configSource.ConfigSource.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/configsource"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/configsource"
 
 configsource.ConfigSource_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -788,7 +788,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-waypoint.configSource.ConfigSourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/configsource"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/configsource"
 
 &configsource.ConfigSourceConfig {
 	Connection: interface{},

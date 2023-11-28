@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/waypoint/0
 #### Initializers <a name="Initializers" id="@cdktf/provider-waypoint.authMethod.AuthMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/authmethod"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/authmethod"
 
 authmethod.NewAuthMethod(scope Construct, id *string, config AuthMethodConfig) AuthMethod
 ```
@@ -398,7 +398,7 @@ func ResetSigningAlgs()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-waypoint.authMethod.AuthMethod.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/authmethod"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/authmethod"
 
 authmethod.AuthMethod_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-waypoint.authMethod.AuthMethod.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/authmethod"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/authmethod"
 
 authmethod.AuthMethod_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ authmethod.AuthMethod_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-waypoint.authMethod.AuthMethod.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/authmethod"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/authmethod"
 
 authmethod.AuthMethod_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ authmethod.AuthMethod_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-waypoint.authMethod.AuthMethod.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/authmethod"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/authmethod"
 
 authmethod.AuthMethod_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -995,7 +995,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-waypoint.authMethod.AuthMethodConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/authmethod"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/authmethod"
 
 &authmethod.AuthMethodConfig {
 	Connection: interface{},
