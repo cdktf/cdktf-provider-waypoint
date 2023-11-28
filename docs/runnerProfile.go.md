@@ -1,7 +1,3 @@
-# `waypoint_runner_profile`
-
-Refer to the Terraform Registory for docs: [`waypoint_runner_profile`](https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/runner_profile).
-
 # `runnerProfile` Submodule <a name="`runnerProfile` Submodule" id="@cdktf/provider-waypoint.runnerProfile"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `waypoint_auth_method`
-
-Refer to the Terraform Registory for docs: [`waypoint_auth_method`](https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/auth_method).
-
 # `authMethod` Submodule <a name="`authMethod` Submodule" id="@cdktf/provider-waypoint.authMethod"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
