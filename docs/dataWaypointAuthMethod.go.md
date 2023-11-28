@@ -1,7 +1,3 @@
-# `data_waypoint_auth_method`
-
-Refer to the Terraform Registory for docs: [`data_waypoint_auth_method`](https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/data-sources/auth_method).
-
 # `dataWaypointAuthMethod` Submodule <a name="`dataWaypointAuthMethod` Submodule" id="@cdktf/provider-waypoint.dataWaypointAuthMethod"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/waypoint/0
 #### Initializers <a name="Initializers" id="@cdktf/provider-waypoint.dataWaypointAuthMethod.DataWaypointAuthMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointauthmethod"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/datawaypointauthmethod"
 
 datawaypointauthmethod.NewDataWaypointAuthMethod(scope Construct, id *string, config DataWaypointAuthMethodConfig) DataWaypointAuthMethod
 ```
@@ -271,7 +267,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-waypoint.dataWaypointAuthMethod.DataWaypointAuthMethod.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointauthmethod"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/datawaypointauthmethod"
 
 datawaypointauthmethod.DataWaypointAuthMethod_IsConstruct(x interface{}) *bool
 ```
@@ -303,7 +299,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-waypoint.dataWaypointAuthMethod.DataWaypointAuthMethod.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointauthmethod"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/datawaypointauthmethod"
 
 datawaypointauthmethod.DataWaypointAuthMethod_IsTerraformElement(x interface{}) *bool
 ```
@@ -317,7 +313,7 @@ datawaypointauthmethod.DataWaypointAuthMethod_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-waypoint.dataWaypointAuthMethod.DataWaypointAuthMethod.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointauthmethod"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/datawaypointauthmethod"
 
 datawaypointauthmethod.DataWaypointAuthMethod_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -331,7 +327,7 @@ datawaypointauthmethod.DataWaypointAuthMethod_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-waypoint.dataWaypointAuthMethod.DataWaypointAuthMethod.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointauthmethod"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/datawaypointauthmethod"
 
 datawaypointauthmethod.DataWaypointAuthMethod_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -692,7 +688,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-waypoint.dataWaypointAuthMethod.DataWaypointAuthMethodConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointauthmethod"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/datawaypointauthmethod"
 
 &datawaypointauthmethod.DataWaypointAuthMethodConfig {
 	Connection: interface{},

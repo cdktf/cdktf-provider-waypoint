@@ -1,7 +1,3 @@
-# `provider`
-
-Refer to the Terraform Registory for docs: [`waypoint`](https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs).
-
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-waypoint.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
