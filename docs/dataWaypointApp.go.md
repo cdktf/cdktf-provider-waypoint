@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/waypoint/0
 #### Initializers <a name="Initializers" id="@cdktf/provider-waypoint.dataWaypointApp.DataWaypointApp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointapp"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/datawaypointapp"
 
 datawaypointapp.NewDataWaypointApp(scope Construct, id *string, config DataWaypointAppConfig) DataWaypointApp
 ```
@@ -267,7 +267,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-waypoint.dataWaypointApp.DataWaypointApp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointapp"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/datawaypointapp"
 
 datawaypointapp.DataWaypointApp_IsConstruct(x interface{}) *bool
 ```
@@ -299,7 +299,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-waypoint.dataWaypointApp.DataWaypointApp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointapp"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/datawaypointapp"
 
 datawaypointapp.DataWaypointApp_IsTerraformElement(x interface{}) *bool
 ```
@@ -313,7 +313,7 @@ datawaypointapp.DataWaypointApp_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-waypoint.dataWaypointApp.DataWaypointApp.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointapp"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/datawaypointapp"
 
 datawaypointapp.DataWaypointApp_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ datawaypointapp.DataWaypointApp_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-waypoint.dataWaypointApp.DataWaypointApp.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointapp"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/datawaypointapp"
 
 datawaypointapp.DataWaypointApp_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -589,7 +589,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-waypoint.dataWaypointApp.DataWaypointAppConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointapp"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/datawaypointapp"
 
 &datawaypointapp.DataWaypointAppConfig {
 	Connection: interface{},
