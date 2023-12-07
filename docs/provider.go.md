@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/waypoint/0
 #### Initializers <a name="Initializers" id="@cdktf/provider-waypoint.provider.WaypointProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/provider"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/provider"
 
 provider.NewWaypointProvider(scope Construct, id *string, config WaypointProviderConfig) WaypointProvider
 ```
@@ -158,7 +158,7 @@ func ResetToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-waypoint.provider.WaypointProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/provider"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/provider"
 
 provider.WaypointProvider_IsConstruct(x interface{}) *bool
 ```
@@ -190,7 +190,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-waypoint.provider.WaypointProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/provider"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/provider"
 
 provider.WaypointProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -204,7 +204,7 @@ provider.WaypointProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-waypoint.provider.WaypointProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/provider"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/provider"
 
 provider.WaypointProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -218,7 +218,7 @@ provider.WaypointProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-waypoint.provider.WaypointProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/provider"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/provider"
 
 provider.WaypointProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -447,7 +447,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-waypoint.provider.WaypointProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/provider"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/provider"
 
 &provider.WaypointProviderConfig {
 	Alias: *string,
