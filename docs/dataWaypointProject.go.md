@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/waypoint/0
 #### Initializers <a name="Initializers" id="@cdktf/provider-waypoint.dataWaypointProject.DataWaypointProject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointproject"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/datawaypointproject"
 
 datawaypointproject.NewDataWaypointProject(scope Construct, id *string, config DataWaypointProjectConfig) DataWaypointProject
 ```
@@ -267,7 +267,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-waypoint.dataWaypointProject.DataWaypointProject.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointproject"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/datawaypointproject"
 
 datawaypointproject.DataWaypointProject_IsConstruct(x interface{}) *bool
 ```
@@ -299,7 +299,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-waypoint.dataWaypointProject.DataWaypointProject.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointproject"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/datawaypointproject"
 
 datawaypointproject.DataWaypointProject_IsTerraformElement(x interface{}) *bool
 ```
@@ -313,7 +313,7 @@ datawaypointproject.DataWaypointProject_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-waypoint.dataWaypointProject.DataWaypointProject.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointproject"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/datawaypointproject"
 
 datawaypointproject.DataWaypointProject_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ datawaypointproject.DataWaypointProject_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-waypoint.dataWaypointProject.DataWaypointProject.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointproject"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/datawaypointproject"
 
 datawaypointproject.DataWaypointProject_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -633,7 +633,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-waypoint.dataWaypointProject.DataWaypointProjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointproject"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/datawaypointproject"
 
 &datawaypointproject.DataWaypointProjectConfig {
 	Connection: interface{},
@@ -751,7 +751,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-waypoint.dataWaypointProject.DataWaypointProjectDataSourceGit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointproject"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/datawaypointproject"
 
 &datawaypointproject.DataWaypointProjectDataSourceGit {
 
@@ -764,7 +764,7 @@ import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointproj
 #### Initializer <a name="Initializer" id="@cdktf/provider-waypoint.dataWaypointProject.DataWaypointProjectGitAuthBasic.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointproject"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/datawaypointproject"
 
 &datawaypointproject.DataWaypointProjectGitAuthBasic {
 	Password: *string,
@@ -814,7 +814,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-waypoint.dataWaypointProject.DataWaypointProjectGitAuthSsh.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointproject"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/datawaypointproject"
 
 &datawaypointproject.DataWaypointProjectGitAuthSsh {
 	SshPrivateKey: *string,
@@ -848,7 +848,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-waypoint.dataWaypointProject.DataWaypointProjectProjectVariables.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointproject"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/datawaypointproject"
 
 &datawaypointproject.DataWaypointProjectProjectVariables {
 	Name: *string,
@@ -896,7 +896,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-waypoint.dataWaypointProject.DataWaypointProjectDataSourceGitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointproject"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/datawaypointproject"
 
 datawaypointproject.NewDataWaypointProjectDataSourceGitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataWaypointProjectDataSourceGitOutputReference
 ```
@@ -1211,7 +1211,7 @@ func InternalValue() DataWaypointProjectDataSourceGit
 #### Initializers <a name="Initializers" id="@cdktf/provider-waypoint.dataWaypointProject.DataWaypointProjectGitAuthBasicOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointproject"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/datawaypointproject"
 
 datawaypointproject.NewDataWaypointProjectGitAuthBasicOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataWaypointProjectGitAuthBasicOutputReference
 ```
@@ -1504,7 +1504,7 @@ func InternalValue() DataWaypointProjectGitAuthBasic
 #### Initializers <a name="Initializers" id="@cdktf/provider-waypoint.dataWaypointProject.DataWaypointProjectGitAuthSshOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointproject"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/datawaypointproject"
 
 datawaypointproject.NewDataWaypointProjectGitAuthSshOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataWaypointProjectGitAuthSshOutputReference
 ```
@@ -1797,7 +1797,7 @@ func InternalValue() DataWaypointProjectGitAuthSsh
 #### Initializers <a name="Initializers" id="@cdktf/provider-waypoint.dataWaypointProject.DataWaypointProjectProjectVariablesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointproject"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/datawaypointproject"
 
 datawaypointproject.NewDataWaypointProjectProjectVariablesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataWaypointProjectProjectVariablesList
 ```
@@ -1940,7 +1940,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-waypoint.dataWaypointProject.DataWaypointProjectProjectVariablesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointproject"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/datawaypointproject"
 
 datawaypointproject.NewDataWaypointProjectProjectVariablesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataWaypointProjectProjectVariablesOutputReference
 ```
