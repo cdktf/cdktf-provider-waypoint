@@ -35,7 +35,6 @@ jspm_packages/
 /dist/changelog.md
 /dist/version.txt
 !/.github/workflows/release.yml
-!/.github/workflows/upgrade-main.yml
 !/.github/pull_request_template.md
 !/test/
 !/tsconfig.dev.json
@@ -56,12 +55,7 @@ package-lock.json
 !/.github/workflows/auto-close-community-prs.yml
 !/.github/workflows/automerge.yml
 !/.github/workflows/lock.yml
-!/scripts/check-for-upgrades.js
-!/.github/workflows/provider-upgrade.yml
-!/.github/workflows/alert-open-prs.yml
-!/.github/workflows/force-release.yml
 !/.github/CODEOWNERS
-!/scripts/should-release.js
 API.md
 !/docs/*.md
 !/.copywrite.hcl
