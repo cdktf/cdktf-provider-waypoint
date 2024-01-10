@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-waypoint.dataWaypointAuthMethod.DataWaypointAuthMethod.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-waypoint.dataWaypointAuthMethod.DataWaypointAuthMethod.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-waypoint.dataWaypointAuthMethod.DataWaypointAuthMethod.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-waypoint.dataWaypointAuthMethod.DataWaypointAuthMethod.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-waypoint.dataWaypointAuthMethod.DataWaypointAuthMethod.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-waypoint.dataWaypointAuthMethod.DataWaypointAuthMethod.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-waypoint.dataWaypointAuthMethod.DataWaypointAuthMethod.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -118,6 +119,14 @@ private void ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-waypoint.dataWaypointAuthMethod.DataWaypointAuthMethod.toHclTerraform"></a>
+
+```csharp
+private object ToHclTerraform()
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-waypoint.dataWaypointAuthMethod.DataWaypointAuthMethod.toMetadata"></a>
 

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/waypoint/0
 #### Initializers <a name="Initializers" id="@cdktf/provider-waypoint.dataWaypointApp.DataWaypointApp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointapp"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/datawaypointapp"
 
 datawaypointapp.NewDataWaypointApp(scope Construct, id *string, config DataWaypointAppConfig) DataWaypointApp
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-waypoint.dataWaypointApp.DataWaypointApp.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-waypoint.dataWaypointApp.DataWaypointApp.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-waypoint.dataWaypointApp.DataWaypointApp.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-waypoint.dataWaypointApp.DataWaypointApp.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-waypoint.dataWaypointApp.DataWaypointApp.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-waypoint.dataWaypointApp.DataWaypointApp.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-waypoint.dataWaypointApp.DataWaypointApp.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -118,6 +119,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-waypoint.dataWaypointApp.DataWaypointApp.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-waypoint.dataWaypointApp.DataWaypointApp.toMetadata"></a>
 
@@ -267,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-waypoint.dataWaypointApp.DataWaypointApp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointapp"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/datawaypointapp"
 
 datawaypointapp.DataWaypointApp_IsConstruct(x interface{}) *bool
 ```
@@ -299,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-waypoint.dataWaypointApp.DataWaypointApp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointapp"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/datawaypointapp"
 
 datawaypointapp.DataWaypointApp_IsTerraformElement(x interface{}) *bool
 ```
@@ -313,7 +322,7 @@ datawaypointapp.DataWaypointApp_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-waypoint.dataWaypointApp.DataWaypointApp.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointapp"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/datawaypointapp"
 
 datawaypointapp.DataWaypointApp_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -327,7 +336,7 @@ datawaypointapp.DataWaypointApp_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-waypoint.dataWaypointApp.DataWaypointApp.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointapp"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/datawaypointapp"
 
 datawaypointapp.DataWaypointApp_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -589,7 +598,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-waypoint.dataWaypointApp.DataWaypointAppConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/datawaypointapp"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/datawaypointapp"
 
 &datawaypointapp.DataWaypointAppConfig {
 	Connection: interface{},

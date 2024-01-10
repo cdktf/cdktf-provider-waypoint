@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/waypoint/0
 #### Initializers <a name="Initializers" id="@cdktf/provider-waypoint.configSource.ConfigSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/configsource"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/configsource"
 
 configsource.NewConfigSource(scope Construct, id *string, config ConfigSourceConfig) ConfigSource
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-waypoint.configSource.ConfigSource.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-waypoint.configSource.ConfigSource.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-waypoint.configSource.ConfigSource.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-waypoint.configSource.ConfigSource.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-waypoint.configSource.ConfigSource.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-waypoint.configSource.ConfigSource.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-waypoint.configSource.ConfigSource.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -128,6 +129,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-waypoint.configSource.ConfigSource.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-waypoint.configSource.ConfigSource.toMetadata"></a>
 
@@ -399,7 +406,7 @@ func ResetWorkspace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-waypoint.configSource.ConfigSource.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/configsource"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/configsource"
 
 configsource.ConfigSource_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-waypoint.configSource.ConfigSource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/configsource"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/configsource"
 
 configsource.ConfigSource_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +452,7 @@ configsource.ConfigSource_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-waypoint.configSource.ConfigSource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/configsource"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/configsource"
 
 configsource.ConfigSource_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +466,7 @@ configsource.ConfigSource_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-waypoint.configSource.ConfigSource.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/configsource"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/configsource"
 
 configsource.ConfigSource_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -831,7 +838,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-waypoint.configSource.ConfigSourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/configsource"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/configsource"
 
 &configsource.ConfigSourceConfig {
 	Connection: interface{},

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/waypoint/0.1.0/docs/resources/project
 // generated from terraform resource schema
 
@@ -107,6 +102,55 @@ export function projectDataSourceGitToTerraform(struct?: ProjectDataSourceGit | 
     git_url: cdktf.stringToTerraform(struct!.gitUrl),
     ignore_changes_outside_path: cdktf.booleanToTerraform(struct!.ignoreChangesOutsidePath),
   }
+}
+
+
+export function projectDataSourceGitToHclTerraform(struct?: ProjectDataSourceGit | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    file_change_signal: {
+      value: cdktf.stringToHclTerraform(struct!.fileChangeSignal),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    git_path: {
+      value: cdktf.stringToHclTerraform(struct!.gitPath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    git_poll_interval_seconds: {
+      value: cdktf.numberToHclTerraform(struct!.gitPollIntervalSeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    git_ref: {
+      value: cdktf.stringToHclTerraform(struct!.gitRef),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    git_url: {
+      value: cdktf.stringToHclTerraform(struct!.gitUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ignore_changes_outside_path: {
+      value: cdktf.booleanToHclTerraform(struct!.ignoreChangesOutsidePath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ProjectDataSourceGitOutputReference extends cdktf.ComplexObject {
@@ -303,6 +347,31 @@ export function projectGitAuthBasicToTerraform(struct?: ProjectGitAuthBasic | cd
   }
 }
 
+
+export function projectGitAuthBasicToHclTerraform(struct?: ProjectGitAuthBasic | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ProjectGitAuthBasicOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -408,6 +477,37 @@ export function projectGitAuthSshToTerraform(struct?: ProjectGitAuthSsh | cdktf.
     passphrase: cdktf.stringToTerraform(struct!.passphrase),
     ssh_private_key: cdktf.stringToTerraform(struct!.sshPrivateKey),
   }
+}
+
+
+export function projectGitAuthSshToHclTerraform(struct?: ProjectGitAuthSsh | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    git_user: {
+      value: cdktf.stringToHclTerraform(struct!.gitUser),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    passphrase: {
+      value: cdktf.stringToHclTerraform(struct!.passphrase),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ssh_private_key: {
+      value: cdktf.stringToHclTerraform(struct!.sshPrivateKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ProjectGitAuthSshOutputReference extends cdktf.ComplexObject {
@@ -534,6 +634,37 @@ export function projectProjectVariablesToTerraform(struct?: ProjectProjectVariab
     sensitive: cdktf.booleanToTerraform(struct!.sensitive),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function projectProjectVariablesToHclTerraform(struct?: ProjectProjectVariables | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sensitive: {
+      value: cdktf.booleanToHclTerraform(struct!.sensitive),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ProjectProjectVariablesOutputReference extends cdktf.ComplexObject {
@@ -844,5 +975,55 @@ export class Project extends cdktf.TerraformResource {
       project_variables: cdktf.listMapper(projectProjectVariablesToTerraform, false)(this._projectVariables.internalValue),
       remote_runners_enabled: cdktf.booleanToTerraform(this._remoteRunnersEnabled),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      app_status_poll_seconds: {
+        value: cdktf.numberToHclTerraform(this._appStatusPollSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      data_source_git: {
+        value: projectDataSourceGitToHclTerraform(this._dataSourceGit.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "ProjectDataSourceGit",
+      },
+      git_auth_basic: {
+        value: projectGitAuthBasicToHclTerraform(this._gitAuthBasic.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "ProjectGitAuthBasic",
+      },
+      git_auth_ssh: {
+        value: projectGitAuthSshToHclTerraform(this._gitAuthSsh.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "ProjectGitAuthSsh",
+      },
+      project_name: {
+        value: cdktf.stringToHclTerraform(this._projectName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_variables: {
+        value: cdktf.listMapperHcl(projectProjectVariablesToHclTerraform, false)(this._projectVariables.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ProjectProjectVariablesList",
+      },
+      remote_runners_enabled: {
+        value: cdktf.booleanToHclTerraform(this._remoteRunnersEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

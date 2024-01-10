@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/waypoint/0
 #### Initializers <a name="Initializers" id="@cdktf/provider-waypoint.project.Project.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/project"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/project"
 
 project.NewProject(scope Construct, id *string, config ProjectConfig) Project
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-waypoint.project.Project.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-waypoint.project.Project.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-waypoint.project.Project.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-waypoint.project.Project.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-waypoint.project.Project.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-waypoint.project.Project.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-waypoint.project.Project.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -133,6 +134,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-waypoint.project.Project.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-waypoint.project.Project.toMetadata"></a>
 
@@ -458,7 +465,7 @@ func ResetRemoteRunnersEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-waypoint.project.Project.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/project"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/project"
 
 project.Project_IsConstruct(x interface{}) *bool
 ```
@@ -490,7 +497,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-waypoint.project.Project.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/project"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/project"
 
 project.Project_IsTerraformElement(x interface{}) *bool
 ```
@@ -504,7 +511,7 @@ project.Project_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-waypoint.project.Project.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/project"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/project"
 
 project.Project_IsTerraformResource(x interface{}) *bool
 ```
@@ -518,7 +525,7 @@ project.Project_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-waypoint.project.Project.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/project"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/project"
 
 project.Project_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -912,7 +919,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-waypoint.project.ProjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/project"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/project"
 
 &project.ProjectConfig {
 	Connection: interface{},
@@ -922,11 +929,11 @@ import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/project"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	DataSourceGit: github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2.project.ProjectDataSourceGit,
+	DataSourceGit: github.com/cdktf/cdktf-provider-waypoint-go/waypoint.project.ProjectDataSourceGit,
 	ProjectName: *string,
 	AppStatusPollSeconds: *f64,
-	GitAuthBasic: github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2.project.ProjectGitAuthBasic,
-	GitAuthSsh: github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2.project.ProjectGitAuthSsh,
+	GitAuthBasic: github.com/cdktf/cdktf-provider-waypoint-go/waypoint.project.ProjectGitAuthBasic,
+	GitAuthSsh: github.com/cdktf/cdktf-provider-waypoint-go/waypoint.project.ProjectGitAuthSsh,
 	ProjectVariables: interface{},
 	RemoteRunnersEnabled: interface{},
 }
@@ -1126,7 +1133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-waypoint.project.ProjectDataSourceGit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/project"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/project"
 
 &project.ProjectDataSourceGit {
 	FileChangeSignal: *string,
@@ -1240,7 +1247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-waypoint.project.ProjectGitAuthBasic.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/project"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/project"
 
 &project.ProjectGitAuthBasic {
 	Password: *string,
@@ -1290,7 +1297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-waypoint.project.ProjectGitAuthSsh.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/project"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/project"
 
 &project.ProjectGitAuthSsh {
 	SshPrivateKey: *string,
@@ -1356,7 +1363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-waypoint.project.ProjectProjectVariables.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/project"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/project"
 
 &project.ProjectProjectVariables {
 	Name: *string,
@@ -1418,7 +1425,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-waypoint.project.ProjectDataSourceGitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/project"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/project"
 
 project.NewProjectDataSourceGitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ProjectDataSourceGitOutputReference
 ```
@@ -1841,7 +1848,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-waypoint.project.ProjectGitAuthBasicOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/project"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/project"
 
 project.NewProjectGitAuthBasicOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ProjectGitAuthBasicOutputReference
 ```
@@ -2134,7 +2141,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-waypoint.project.ProjectGitAuthSshOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/project"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/project"
 
 project.NewProjectGitAuthSshOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ProjectGitAuthSshOutputReference
 ```
@@ -2463,7 +2470,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-waypoint.project.ProjectProjectVariablesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/project"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/project"
 
 project.NewProjectProjectVariablesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProjectProjectVariablesList
 ```
@@ -2504,10 +2511,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-waypoint.project.ProjectProjectVariablesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-waypoint.project.ProjectProjectVariablesList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-waypoint.project.ProjectProjectVariablesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-waypoint.project.ProjectProjectVariablesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-waypoint.project.ProjectProjectVariablesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-waypoint.project.ProjectProjectVariablesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-waypoint.project.ProjectProjectVariablesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2606,7 +2630,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-waypoint.project.ProjectProjectVariablesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/v2/project"
+import "github.com/cdktf/cdktf-provider-waypoint-go/waypoint/project"
 
 project.NewProjectProjectVariablesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProjectProjectVariablesOutputReference
 ```
