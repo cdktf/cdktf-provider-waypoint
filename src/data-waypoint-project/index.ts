@@ -31,6 +31,17 @@ export function dataWaypointProjectDataSourceGitToTerraform(struct?: DataWaypoin
   }
 }
 
+
+export function dataWaypointProjectDataSourceGitToHclTerraform(struct?: DataWaypointProjectDataSourceGit): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataWaypointProjectDataSourceGitOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -111,6 +122,31 @@ export function dataWaypointProjectGitAuthBasicToTerraform(struct?: DataWaypoint
     password: cdktf.stringToTerraform(struct!.password),
     username: cdktf.stringToTerraform(struct!.username),
   }
+}
+
+
+export function dataWaypointProjectGitAuthBasicToHclTerraform(struct?: DataWaypointProjectGitAuthBasic): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataWaypointProjectGitAuthBasicOutputReference extends cdktf.ComplexObject {
@@ -196,6 +232,25 @@ export function dataWaypointProjectGitAuthSshToTerraform(struct?: DataWaypointPr
   }
 }
 
+
+export function dataWaypointProjectGitAuthSshToHclTerraform(struct?: DataWaypointProjectGitAuthSsh): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ssh_private_key: {
+      value: cdktf.stringToHclTerraform(struct!.sshPrivateKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataWaypointProjectGitAuthSshOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -271,6 +326,31 @@ export function dataWaypointProjectProjectVariablesToTerraform(struct?: DataWayp
     name: cdktf.stringToTerraform(struct!.name),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function dataWaypointProjectProjectVariablesToHclTerraform(struct?: DataWaypointProjectProjectVariables): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataWaypointProjectProjectVariablesOutputReference extends cdktf.ComplexObject {
@@ -483,5 +563,19 @@ export class DataWaypointProject extends cdktf.TerraformDataSource {
     return {
       project_name: cdktf.stringToTerraform(this._projectName),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      project_name: {
+        value: cdktf.stringToHclTerraform(this._projectName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

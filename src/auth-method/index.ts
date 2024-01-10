@@ -401,4 +401,96 @@ export class AuthMethod extends cdktf.TerraformResource {
       signing_algs: cdktf.listMapper(cdktf.stringToTerraform, false)(this._signingAlgs),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      accessor_selector: {
+        value: cdktf.stringToHclTerraform(this._accessorSelector),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      allowed_redirect_uris: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedRedirectUris),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      auds: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._auds),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      claim_mappings: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._claimMappings),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      client_id: {
+        value: cdktf.stringToHclTerraform(this._clientId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_secret: {
+        value: cdktf.stringToHclTerraform(this._clientSecret),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      discovery_ca_pem: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._discoveryCaPem),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      discovery_url: {
+        value: cdktf.stringToHclTerraform(this._discoveryUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      list_claim_mappings: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._listClaimMappings),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scopes: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._scopes),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      signing_algs: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._signingAlgs),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

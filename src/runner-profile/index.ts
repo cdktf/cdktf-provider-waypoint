@@ -294,4 +294,66 @@ export class RunnerProfile extends cdktf.TerraformResource {
       target_runner_labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._targetRunnerLabels),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      default: {
+        value: cdktf.booleanToHclTerraform(this._default),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      environment_variables: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._environmentVariables),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      oci_url: {
+        value: cdktf.stringToHclTerraform(this._ociUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      plugin_config: {
+        value: cdktf.stringToHclTerraform(this._pluginConfig),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      plugin_config_format: {
+        value: cdktf.stringToHclTerraform(this._pluginConfigFormat),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      plugin_type: {
+        value: cdktf.stringToHclTerraform(this._pluginType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      target_runner_id: {
+        value: cdktf.stringToHclTerraform(this._targetRunnerId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      target_runner_labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._targetRunnerLabels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }
